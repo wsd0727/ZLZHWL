@@ -1,0 +1,386 @@
+@import "./theme.scss";
+@import "./font.scss";
+@import "./variables.module.scss";
+@import "./mixin.scss";
+@import "./transition.scss";
+@import "./element-ui.scss";
+@import "./color.scss";
+@import "./sidebar.scss";
+@import "./btn.scss";
+@import "./ruoyi.scss";
+@import "./table.scss";
+
+.el-menu {
+  --el-menu-item-height: 50px !important;
+}
+.el-menu--horizontal {
+  border-bottom: none !important;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB,
+    Microsoft YaHei, Arial, sans-serif;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.no-padding {
+  padding: 0px !important;
+}
+
+.padding-content {
+  padding: 4px 0;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.fr {
+  float: right;
+}
+
+.fl {
+  float: left;
+}
+
+.pr-5 {
+  padding-right: 5px;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.block {
+  display: block;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.inlineBlock {
+  display: block;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+aside {
+  background: #eef1f6;
+  padding: 8px 24px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  display: block;
+  line-height: 32px;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: #2c3e50;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  a {
+    color: #337ab7;
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(32, 160, 255);
+    }
+  }
+}
+
+//main-container全局样式
+.app-container {
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+.components-container {
+  margin: 30px 50px;
+  position: relative;
+}
+
+.pagination-container {
+  margin-top: 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.sub-navbar {
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  width: 100%;
+  text-align: right;
+  padding-right: 20px;
+  transition: 600ms ease position;
+  background: linear-gradient(
+    90deg,
+    rgba(32, 182, 249, 1) 0%,
+    rgba(32, 182, 249, 1) 0%,
+    rgba(33, 120, 241, 1) 100%,
+    rgba(33, 120, 241, 1) 100%
+  );
+
+  .subtitle {
+    font-size: 20px;
+    color: #fff;
+  }
+
+  &.draft {
+    background: #d0d0d0;
+  }
+
+  &.deleted {
+    background: #d0d0d0;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.link-type,
+.link-type:focus {
+  color: #337ab7;
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(32, 160, 255);
+  }
+}
+
+.filter-container {
+  padding-bottom: 10px;
+
+  .filter-item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 10px;
+  }
+}
+
+//refine vue-multiselect plugin
+.multiselect {
+  line-height: 16px;
+}
+
+.multiselect--active {
+  z-index: 1000 !important;
+}
+
+.el-menu--popup {
+  min-width: 110px !important;
+}
+
+/*滚动条整体部分*/
+.mytable-scrollbar ::-webkit-scrollbar,
+.vxe-modal--body ::-webkit-scrollbar {
+  width: 7px;
+  height: 9px;
+}
+
+/*滚动条的轨道*/
+.mytable-scrollbar ::-webkit-scrollbar-track,
+.vxe-modal--body ::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+/*滚动条里面的小方块，能向上向下移动*/
+.mytable-scrollbar ::-webkit-scrollbar-thumb,
+.vxe-modal--body ::-webkit-scrollbar-thumb {
+  background-color: #bfbfbf;
+  border-radius: 5px;
+  border: 1px solid #f1f1f1;
+  box-shadow: inset 0 0 6px rgba(144, 147, 153, 0.3);
+}
+
+.mytable-scrollbar ::-webkit-scrollbar-thumb:hover {
+  background-color: #a8a8a8;
+}
+
+.mytable-scrollbar ::-webkit-scrollbar-thumb:active {
+  background-color: #787878;
+}
+
+/*边角，即两个滚动条的交汇处*/
+.mytable-scrollbar ::-webkit-scrollbar-corner {
+  background-color: #ffffff;
+}
+
+.vxe-table--render-default {
+  color: #333 !important;
+}
+
+/*  重置 VX表格的表头对齐方式 */
+.vxe-header--row .vxe-header--column .vxe-cell {
+  text-align: center !important;
+  font-weight: bold !important;
+  color: #333 !important;
+}
+
+/* 表格行加色 F56C6C  fa541c */
+.mytable-scrollbar .vxe-body--row.row-red {
+  color: #cb2431 !important;
+}
+
+/*    表格行高26    */
+.vxe-table--render-default.size--mini .vxe-header--column:not(.col--ellipsis) {
+  padding: 10px 0 !important;
+}
+
+// 调整表格单元格的左右边距
+.vxe-table--render-default .vxe-cell {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+.el-tabs__content {
+  width: 100%;
+}
+
+.query-form {
+  .form-group {
+    margin-bottom: 0 !important;
+  }
+  .el-form--inline {
+    .el-form-item {
+      margin-right: 5px;
+      margin-bottom: 0 !important;
+    }
+  }
+}
+.el-form-item {
+  margin-bottom: 10px;
+}
+
+.formTable {
+  .vxe-body--row {
+    .col--actived {
+      .vxe-cell {
+        height: 100%;
+        padding: 0;
+      }
+      .el-input {
+        .el-input__wrapper,
+        .el-input-group__append {
+          box-shadow: none !important;
+        }
+        .el-input-group__append {
+          background: none;
+        }
+      }
+    }
+  }
+}
+
+// 统一的主体控制
+
+.app-wrap {
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 4px;
+}
+
+// 富文本
+.mce-content-body {
+  font-size: 14px;
+  line-height: 1.4;
+  white-space: normal;
+  overflow: hidden;
+}
+
+.vxe-loading > .vxe-loading--chunk {
+  color: var(--el-color-primary) !important;
+}
+
+// 统一修改全局的可编辑表格的校验提示内容
+.vxe-table--render-default
+  .vxe-body--column.col--valid-error
+  .vxe-cell--valid
+  .vxe-cell--valid-msg {
+  padding: 2px 4px !important;
+}
+
+// 超出显示省略号
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.vxe-modal--wrapper .vxe-modal--box {
+  border-radius: 8px !important;
+}
+
+// 数字输入框左对齐
+.el-input-number.is-without-controls .el-input__wrapper {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+.el-input-number .el-input__inner {
+  text-align: left !important;
+}
+
+.FormModel .vxe-modal--wrapper .vxe-modal--content {
+  padding: 0 8px !important;
+}
+
+.vxe-modal--wrapper .vxe-modal--content {
+  padding: 10px 20px !important;
+}
+
+// .query-wrap .el-form--inline .el-form-item{
+//   margin-bottom: 10px!important;
+// }
+
+.query-wrap {
+  .flex-row-end {
+    padding-left: 6px;
+  }
+}

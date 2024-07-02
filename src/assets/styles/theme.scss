@@ -1,0 +1,162 @@
+.theme {
+  &-blue {
+    &.leftTheme {
+      .top-menu {
+        background: #fff;
+        color: var(--el-color-black);
+        .right-menu .el-menu-item,
+        .right-menu .el-sub-menu__title,
+        .setting-wrap .avatar-wrapper {
+          color: var(--el-color-black) !important;
+        }
+      }
+      .sidebar-container {
+        background-color: #0a48d1 !important;
+      }
+    }
+    &.topTheme {
+      .side {
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        .logo-wrap {
+          margin: 0 -10px;
+          background: #1183fb;
+        }
+      }
+      .top-menu {
+        background: #1183fb linear-gradient(-90deg, #0a48d1 0, #1183fb 100%);
+        background-color: #1183fb;
+        border-top-color: #0c64eb;
+        border-bottom-color: #e9f2fb;
+        color: var(--el-color-white);
+        .setting-wrap .avatar-wrapper {
+          color: var(--el-color-white);
+        }
+      }
+    }
+    &.color-block {
+      background: #1183fb linear-gradient(-90deg, #0a48d1 0, #1183fb 100%);
+    }
+  }
+
+  &-red {
+    &.leftTheme {
+      .top-menu {
+        background: #fff;
+        color: var(--el-color-black);
+        .right-menu .el-menu-item,
+        .right-menu .el-sub-menu__title,
+        .setting-wrap .avatar-wrapper {
+          color: var(--el-color-black) !important;
+        }
+      }
+      .sidebar-container {
+        background-color: #b31217 !important;
+      }
+    }
+    &.topTheme {
+      .side {
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        .logo-wrap {
+          margin: 0 -10px;
+          background: #e52d27;
+        }
+      }
+      .top-menu {
+        background: #e52d27 linear-gradient(-90deg, #b31217 0, #e52d27 100%);
+        background-color: #e52d27;
+        border-top-color: #e52d27;
+        border-bottom-color: #e9f2fb;
+        color: var(--el-color-white);
+        .setting-wrap .avatar-wrapper {
+          color: var(--el-color-white);
+        }
+      }
+    }
+    &.color-block {
+      background: #e52d27 linear-gradient(-90deg, #b31217 0, #e52d27 100%);
+    }
+  }
+
+  &-yellow {
+    &.leftTheme {
+      .top-menu {
+        background: #fff;
+        color: var(--el-color-black);
+        .right-menu .el-menu-item,
+        .right-menu .el-sub-menu__title,
+        .setting-wrap .avatar-wrapper {
+          color: var(--el-color-black) !important;
+        }
+      }
+      .sidebar-container {
+        background-color: #e65c00 !important;
+      }
+    }
+    &.topTheme {
+      .side {
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        .logo-wrap {
+          margin: 0 -10px;
+          background: #f9d423;
+        }
+      }
+      .top-menu {
+        background: #f9d423 linear-gradient(-90deg, #e65c00 0, #f9d423 100%);
+        background-color: #f9d423;
+        border-top-color: #f9d423;
+        border-bottom-color: #e9f2fb;
+        color: var(--el-color-white);
+        .setting-wrap .avatar-wrapper {
+          color: var(--el-color-white);
+        }
+      }
+    }
+    &.color-block {
+      background: #f9d423 linear-gradient(-90deg, #e65c00 0, #f9d423 100%);
+    }
+  }
+
+  &-green {
+    &.leftTheme {
+      .top-menu {
+        background: #fff;
+        color: var(--el-color-black);
+        .right-menu .el-menu-item,
+        .right-menu .el-sub-menu__title,
+        .setting-wrap .avatar-wrapper {
+          color: var(--el-color-black) !important;
+        }
+      }
+      .sidebar-container {
+        background-color: #11998e !important;
+      }
+    }
+    &.topTheme {
+      .side {
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        .logo-wrap {
+          margin: 0 -10px;
+          background: #38ef7d;
+        }
+      }
+      .top-menu {
+        background: #38ef7d linear-gradient(-90deg, #11998e 0, #38ef7d 100%);
+        background-color: #38ef7d;
+        border-top-color: #38ef7d;
+        border-bottom-color: #e9f2fb;
+        color: var(--el-color-white);
+        .setting-wrap .avatar-wrapper {
+          color: var(--el-color-white);
+        }
+      }
+    }
+    &.color-block {
+      background: #38ef7d linear-gradient(-90deg, #11998e 0, #38ef7d 100%);
+    }
+  }
+}
+
